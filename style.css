@@ -13,7 +13,9 @@ body {
 
 .logo {
   width: 90px;
+  margin-bottom: 8px;
 }
+
 
 .box {
   background: white;
@@ -96,8 +98,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .logo {
-  display: none;
+  width: 90px;
+  margin-bottom: 8px;
 }
+
 /* ===== Checkbox Alignment Fix ===== */
 
 .food-option {
