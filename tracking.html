@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Order Tracking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>SVIT Smart Canteen</h1>
+  <p>Order Tracking</p>
+</div>
+
+<div class="box">
+  <h2>📦 Track Your Order</h2>
+
+  <p><b>Order ID:</b> ORD105</p>
+
+  <ul class="tracking">
+    <li id="step1" class="active">⏳ Order Received</li>
+    <li id="step2">⬜ Food Preparing</li>
+    <li id="step3">⬜ Ready for Pickup</li>
+    <li id="step4">⬜ Collected</li>
+  </ul>
+
+  <div id="notification" class="notification hidden">
+    🍽️ Your food is ready! Please collect it from the counter.
+  </div>
+</div>
+
+<script>
+setTimeout(() => {
+  document.getElementById("step1").className = "done";
+  document.getElementById("step2").className = "active";
+}, 3000);
+
+setTimeout(() => {
+  document.getElementById("step2").className = "done";
+  document.getElementById("step3").className = "active";
+}, 6000);
+
+setTimeout(() => {
+  document.getElementById("step3").className = "done";
+  document.getElementById("step4").className = "active";
+  document.getElementById("notification").classList.remove("hidden");
+}, 9000);
+</script>
+
+</body>
+</html>

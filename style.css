@@ -117,3 +117,70 @@ body {
 .food-option span {
   line-height: 1.4;
 }
+/* ===== Order Tracking ===== */
+
+.tracking {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.tracking li {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #eaeaea;
+}
+
+.tracking li.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.tracking li.active {
+  background: #fff3cd;
+  color: #856404;
+  font-weight: bold;
+}
+/* ===== Order Tracking ===== */
+
+.tracking {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.tracking li {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background: #eaeaea;
+  font-size: 15px;
+}
+
+.tracking li.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.tracking li.active {
+  background: #fff3cd;
+  color: #856404;
+  font-weight: bold;
+}
+
+/* ===== Notification ===== */
+
+.notification {
+  margin-top: 20px;
+  padding: 15px;
+  background: #2c7be5;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
