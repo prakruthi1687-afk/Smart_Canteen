@@ -30,22 +30,39 @@
 </div>
 
 <script>
-setTimeout(() => {
-  document.getElementById("step1").className = "done";
-  document.getElementById("step2").className = "active";
-}, 3000);
+document.addEventListener("DOMContentLoaded", function () {
 
-setTimeout(() => {
-  document.getElementById("step2").className = "done";
-  document.getElementById("step3").className = "active";
-}, 6000);
+  // Ensure notification is hidden initially
+  const notification = document.getElementById("notification");
+  notification.classList.add("hidden");
 
-setTimeout(() => {
-  document.getElementById("step3").className = "done";
-  document.getElementById("step4").className = "active";
-  document.getElementById("notification").classList.remove("hidden");
-}, 9000);
+  const step1 = document.getElementById("step1");
+  const step2 = document.getElementById("step2");
+  const step3 = document.getElementById("step3");
+  const step4 = document.getElementById("step4");
+
+  // Step 1 → Step 2
+  setTimeout(() => {
+    step1.className = "done";
+    step2.className = "active";
+  }, 3000);
+
+  // Step 2 → Step 3
+  setTimeout(() => {
+    step2.className = "done";
+    step3.className = "active";
+  }, 6000);
+
+  // Step 3 → Step 4 + Notification
+  setTimeout(() => {
+    step3.className = "done";
+    step4.className = "active";
+    notification.classList.remove("hidden");
+  }, 9000);
+
+});
 </script>
+
 
 </body>
 </html>
