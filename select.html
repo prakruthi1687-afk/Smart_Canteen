@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <title>Select Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>Select Food Items</h2>
+
+<label class="food-option">
+  <input type="checkbox" value="10">
+  <span>Tea/Coffee – &#8377;10</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="20">
+  <span>Idly(2pcs) – &#8377;20</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="15">
+  <span>Vada – &#8377;15</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="40">
+  <span>Masala Dosa – &#8377;40</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="35">
+  <span>Rice Bath – &#8377;35</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="60">
+  <span>South Indian Meals – &#8377;60</span>
+</label>
+
+<label class="food-option">
+  <input type="checkbox" value="50">
+  <span>Veg Fried Rice – &#8377;50</span>
+</label>
+
+  <h3>Total Amount: ₹<span id="total">0</span></h3>
+
+  <a href="payment.html" class="btn">Proceed to Payment</a>
+</div>
+
+<script>
+let boxes = document.querySelectorAll("input[type=checkbox]");
+let total = document.getElementById("total");
+
+boxes.forEach(box => {
+  box.addEventListener("change", () => {
+    let sum = 0;
+    boxes.forEach(b => {
+      if (b.checked) sum += Number(b.value);
+    });
+    total.innerText = sum;
+  });
+});
+</script>
+
+</body>
+</html>

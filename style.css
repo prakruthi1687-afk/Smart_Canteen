@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5f9;
+  text-align: center;
+}
+
+.header {
+  background: white;
+  padding: 20px;
+  border-bottom: 4px solid #2c7be5;
+}
+
+.logo {
+  width: 90px;
+}
+
+.box {
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+  color: #2c7be5;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #2c7be5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2c7be5;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 8px 0;
+}
+/* ===== FIX NUMBER VISIBILITY ===== */
+
+/* Make all prices and numbers darker */
+td, th, p, label, span {
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Improve table readability */
+table {
+  background: #ffffff;
+}
+
+td {
+  font-size: 16px;
+}
+
+/* Make total amount very clear */
+#total {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c7be5;
+}
+
+/* Improve mobile number rendering */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+.logo {
+  display: none;
+}
+/* ===== Checkbox Alignment Fix ===== */
+
+.food-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;          /* space between checkbox and text */
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.food-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.food-option span {
+  line-height: 1.4;
+}
